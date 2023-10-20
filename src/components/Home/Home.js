@@ -8,7 +8,7 @@ function Home(){
     const [isLoaded, setIsLoaded] = useState(false);
     const [postList, setPostList] = useState([]);
 
-    // postlara ekleme yaptıktan sonra sayfa yenilenmesi için
+    // postlara ekleme yaptıktan sonra sayfa yenilenmesi için 
    const refreshPosts = () => {
     fetch("/posts")
         .then(res => res.json())
@@ -37,7 +37,7 @@ function Home(){
     }else{
         return (
 
-            <div fixed style={{
+            <div style={{
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",

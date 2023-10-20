@@ -66,10 +66,10 @@ function Post(props){
    const checkLikes = () => {
     var likeControl = likes.find((like => like.userId === userId));
     if( likeControl != null){
-      setLikeId(1);
+      setLikeId(likeControl.id);
+      console.log(likeControl.id);
       setIsLiked(true);
     }
-      
    }
 
    const refreshComments = () => {
@@ -174,7 +174,7 @@ function Post(props){
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <Container fixed style={{
+          <Container style={{
               display: "flex",
               flexWrap: "wrap",
               justifyContent : "center",

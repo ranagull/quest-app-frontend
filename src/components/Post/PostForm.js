@@ -123,7 +123,7 @@ function PostForm(props){
             id="outlined-adornment-amount"
             multiline
             placeholder="Title"
-            inputProps={{MaxLenght: 25}}
+            inputProps={{maxlenght: 25}}
             fullWidth
             value = {title}
             onChange = {(i) => handleTitle(i.target.value)}
@@ -138,7 +138,7 @@ function PostForm(props){
             id="outlined-adornment-amount"
             multiline
             placeholder="Text"
-            inputProps={{MaxLenght: 250}}
+            inputProps={{maxlenght: 250}}
             fullWidth
             value = {text}
             onChange = {(i) => handleText(i.target.value)}
